@@ -4,5 +4,5 @@ import json
 f = open("secret-detection-job.json")
 data = json.load(f)
 if len(list(data["results"])) > 0:
-    raise Exception("Secrets found")
+    raise Exception("\n\n\n *******************************\n Secrets found, details can be found in the job artifact \n\n\n")
 f.close()
