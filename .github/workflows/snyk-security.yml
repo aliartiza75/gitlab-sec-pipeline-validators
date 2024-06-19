@@ -33,7 +33,6 @@ jobs:
       - name: Install Snyk
         run: npm install -g snyk
       - run: snyk auth db3c688c-9228-4473-afbf-be6a4686a2bc
-      - run: snyk monitor
 
       - name: install snyk-to-html
         run: |
